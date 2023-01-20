@@ -1,5 +1,5 @@
 import { Profile } from 'components/Profile/Profile';
-import { StatisticsCard } from 'components/Statistics/StatisticsCard';
+import { Statistics } from 'components/Statistics/Statistics';
 import { FriendList } from 'components/FriendList/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 import user from '../data/user.json';
@@ -9,18 +9,9 @@ import transactions from '../data/transactions.json';
 
 export const App = () => {
   return (
-    <div
-      // style={{
-      //   height: '100vh',
-      //   display: 'flex',
-      //   justifyContent: 'center',
-      //   alignItems: 'center',
-      //   fontSize: 40,
-      //   color: '#010101'
-      // }}
-    >
+    <div>
       <Profile items={user} />
-      <StatisticsCard title="Upload stats" stats={data} />
+      <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
