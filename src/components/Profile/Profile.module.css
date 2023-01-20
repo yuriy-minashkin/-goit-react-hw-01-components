@@ -25,6 +25,7 @@
 .name {
   font-size: 42px;
   font-weight: 700;
+  color: rgb(57, 55, 55);
 }
 
 .tag {
@@ -62,5 +63,6 @@
 
 .quantity {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
+  color: rgb(57, 55, 55);
 }
